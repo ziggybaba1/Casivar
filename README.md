@@ -14,7 +14,7 @@ This project is designed to mimic core functionality of lottery betting systems 
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Authentication & Authorization**
   - User registration & login (JWT-based or Sanctum-based auth)
@@ -43,7 +43,7 @@ This project is designed to mimic core functionality of lottery betting systems 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** Laravel 12 (PHP 8.2+)
 - **Database:** PostgreSQL
@@ -54,26 +54,26 @@ This project is designed to mimic core functionality of lottery betting systems 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 app/
-├── Models/ # User, Wallet, Lottery, Bet, Transaction, Result
-├── Policies/ # Authorization policies
-├── Services/ # Business logic (WalletService, BettingService)
-├── Http/
-│ ├── Controllers/ # REST API controllers
-│ ├── Requests/ # Form request validations
-└── Providers/ # AuthServiceProvider, AppServiceProvider, etc.
+    - Models/ # User, Wallet, Lottery, Bet, Transaction, Result
+    - Policies/ # Authorization policies
+    - Services/ # Business logic (WalletService, BettingService)
+Http/
+    - Controllers/ # REST API controllers
+    - Requests/ # Form request validations
+    - Providers/ # AuthServiceProvider, AppServiceProvider, etc.
 database/
-├── migrations/ # PostgreSQL schema definitions
-└── seeders/ # Demo data for testing
+    - migrations/ # PostgreSQL schema definitions
+    - seeders/ # Demo data for testing
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. **Clone the repository**
-   git clone https://github.com/ziggybaba1/casivar.git
-   cd casivar
+   - git clone https://github.com/ziggybaba1/casivar.git
+   - cd casivar
 
 2. **Install dependencies**
    composer install
@@ -82,12 +82,12 @@ database/
    cp .env.example .env
 
 4. **Set PostgreSQL credentials in .env:**
-   DB_CONNECTION=pgsql
-   DB_HOST=127.0.0.1
-   DB_PORT=5432
-   DB_DATABASE=lottery_api
-   DB_USERNAME=postgres
-   DB_PASSWORD=secret
+   - DB_CONNECTION=pgsql
+   - DB_HOST=127.0.0.1
+   - DB_PORT=5432
+   - DB_DATABASE=lottery_api
+   - DB_USERNAME=postgres
+   - DB_PASSWORD=secret
 
 5. **Generate app key**
    php artisan key:generate
