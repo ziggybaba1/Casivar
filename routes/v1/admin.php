@@ -6,12 +6,9 @@ use App\Http\Controllers\Api\v1\Admin\LotteryController;
 use App\Http\Controllers\Api\v1\Admin\DrawController;
 
 
-
-Route::group(['prefix' => 'admin',], function () {
-    Route::middleware('auth:sanctum')->group(function () {
-        Route::middleware('can:admin')->prefix('admin')->group(function () {
-            Route::apiResource('lotteries', LotteryController::class);
-            Route::post('draws/{draw}/result', [DrawController::class, 'postResult']);
-        });
+Route::middleware('auth:sanctum')->group(function () {
+    Route::middleware('can:admin')->prefix('admin')->group(function () {
+        Route::apiResource('lotteries', LotteryController::class);
+        Route::post('draws/{draw}/result', [DrawController::class, 'postResult']);
     });
 });
