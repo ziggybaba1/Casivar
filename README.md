@@ -55,15 +55,15 @@ This project is designed to mimic core functionality of lottery betting systems 
 ---
 
 ## Project Structure
-app/
+- **app/**
     - Models/ # User, Wallet, Lottery, Bet, Transaction, Result
     - Policies/ # Authorization policies
     - Services/ # Business logic (WalletService, BettingService)
-Http/
+- **Http/**
     - Controllers/ # REST API controllers
     - Requests/ # Form request validations
     - Providers/ # AuthServiceProvider, AppServiceProvider, etc.
-database/
+- **database/**
     - migrations/ # PostgreSQL schema definitions
     - seeders/ # Demo data for testing
 
